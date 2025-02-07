@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+/*when landscape, different colour, when light mode different coloor, whjen dark then some other color*/
+
+body{
+    background-color: rgb(222, 235, 135);
+    color:brown;
+}
+
+@media screen and (max-width:400px)     {
+    /*anytime a page is shown on the screen, with a width from 0px to 400px wide*/
+    /*now inside the media query, we are just going to write css like normal*/
+
+    body{
+        background-color: yellow;
+        color: navy;
+    }
+}
