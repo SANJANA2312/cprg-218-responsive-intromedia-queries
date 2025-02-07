@@ -7,7 +7,15 @@ body{
     background-color: rgb(222, 235, 135);
     color:brown;
 }
+/*order matters in wrting media quesries from big to small may be, but do know that*/
 
+@media screen and (max-width:800px){
+    body {
+        background-color: aqua;
+        color: teal;
+        /*anytime a page is shown on the screen, with a width from 800px to 401px wide*/
+    }
+}
 @media screen and (max-width:400px)     {
     /*anytime a page is shown on the screen, with a width from 0px to 400px wide*/
     /*now inside the media query, we are just going to write css like normal*/
@@ -15,5 +23,6 @@ body{
     body{
         background-color: yellow;
         color: navy;
+        /*to test this thing if the coklor changes or not, insoect then phonbe jaisi screeen*/
     }
 }

@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+/*two column layout*/
+div#container{
+    display: grid;
+    grid-template-areas: 
+    "top top" /*these are not good names, as thses are just for easyb understanding as we just started to learn*/
+    /*these six names is like 2 columns and 3 rows, top top is two times bcoz i want it accross both the colums, if i just want it on one then just one time*/
+    "left right" /* by going to inspect then on grid and ticking all the sections, you can see the names that you have given to the grid*/
+    "bottom bottom";
+    grid-template-columns: 1fr 3fr;  /*to set the size of the colums*/
+    grid-template-rows: auto 1fr auto;
+    gap:2rem;
+}
+header {
+    grid-area: top;
+    background-color: rgb(242, 235, 39);
+    color: blueviolet;
+}
+main {
+    grid-area: right;
+}
+
+nav{/*this is the side bar */
+    background-color: bisque;
+    grid-area: left;
+}
+
+footer{
+    grid-area: bottom; /*move content ariund by changing the grid area*/
+    background-color: aquamarine;
+    color: brown;
+}
