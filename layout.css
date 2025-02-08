@@ -21,6 +21,12 @@ header {
 main {
     grid-area: right;
 }
+#desktop{ 
+    background-color: brown;
+    color:yellow;
+    padding: 1rem;
+
+}
 
 nav{/*this is the side bar */
     background-color: bisque;
@@ -45,4 +51,8 @@ footer{
         grid-template-columns: 1fr;
         gap:0rem;
     }
+}
+
+#desktop{
+    display: none;
 }
