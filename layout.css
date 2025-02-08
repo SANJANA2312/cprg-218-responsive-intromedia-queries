@@ -42,6 +42,7 @@ footer{
         "right"
         "bottom"; /*another way of doing this is display:block;*/
         /*there is extrab spacce when we just want it to be one columns now so we give it the size of 1fr*/
-        grid-template-columns: 1fr;;
+        grid-template-columns: 1fr;
+        gap:0rem;
     }
 }
